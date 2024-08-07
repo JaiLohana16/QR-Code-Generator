@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(33, 33, 73);
+}
+.container{
+    position: relative;
+    top: 150px;
+    border-radius: 25px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 220px;
+    background-color: aliceblue;
+
+}
+
+.container label{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bolder;
+    
+}
+.container input{
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px;
+    
+}
+button{
+    width: 250px;
+    height: 30px;
+    background: rgb(33, 33, 73);
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    
+}
+#imgbox{
+    max-width: 250px;
+    border-radius:5px ;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s;
+    color: black;
+}
+
+#imgbox.showimg{
+    max-height: 300px;
+    padding: 5px;
+    /* margin-left: 100px; */
+    border: 1px solid rgb(196, 182, 182);
+    /* background-color: aqua; */
+}
+
+
+.error{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform:translateX(0)
+    }
+    25%{
+        transform:translateX(-2px)
+    }
+    50%{
+        transform:translateX(0)
+    }
+    75%{
+        transform:translateX(2px)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+#qrtextdisplay{
+    color: black;
+    max-width: 250px;
+    height: 20px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-right: auto; */
+}
